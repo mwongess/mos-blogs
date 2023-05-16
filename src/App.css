@@ -54,8 +54,15 @@ input{
   align-items: center;
   gap: 0.6rem;
 }
+.blog h4{
+  color:   hsl(180, 14%, 20%);
+}
+.blog p {
+  color: hsl(180, 8%, 52%)
+  ;
+}
 img{
-  height: 2.5rem;
+  height: 2.9rem;
   border-radius: 50%;
 }
 .recommended{
@@ -88,12 +95,16 @@ img{
   border-radius: 10px;
   border: 1px solid black;
   cursor: pointer;
+  text-align: center;
 }
 .follow p{
   margin-bottom: 0.5rem;
 }
 .card{
   margin-bottom: 0.5rem;
+}
+.title{
+  color: hsl(180, 29%, 50%);
 }
 @media screen and (max-width: 600px) {
   .header{

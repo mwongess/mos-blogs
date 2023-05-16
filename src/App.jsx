@@ -47,10 +47,10 @@ function App() {
     <div className="body">
       <BlogHeader title={data.tile} />
       <div className="main">
-        <BlogMain blogs = {data.blogs}/>
-        <BlogAside blogs = {data.blogs}/>
+        <BlogMain blogs={data.blogs} />
+        <BlogAside blogs={data.blogs} />
       </div>
-      <BlogFooter name={data.name} date={data.date}/>
+      <BlogFooter name={data.name} date={data.date} />
     </div>
   );
 }

@@ -12,10 +12,10 @@ export const BlogMain = ({ blogs }) => {
                 alt=""
               />
             </div>
-            <p>{blog.author}</p>
+            <h4 className="title">{blog.author}</h4>
           </div>
           <div className="blog">
-            <h3>{blog.blogName}</h3>
+            <h4 >{blog.blogName}</h4>
             <p>{blog.description}</p>
           </div>
           <hr />
