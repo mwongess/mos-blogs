@@ -5,8 +5,9 @@ export const  BlogHeader = ({title}) => {
     return (
         <div className="header">
             <div className="logo">
-                <h4>{title}</h4>
+                <h2>{title}</h2>
             </div>
+            <div><input type="search" placeholder="Search blog"/></div>
         </div>
     )
 } 

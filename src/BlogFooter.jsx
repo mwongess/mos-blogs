@@ -5,7 +5,7 @@ export const  BlogFooter = ({name, date}) => {
     return (
         <div className="footer">
             <div>
-                <p>{name}</p>
+                <hp>Youre logged in as <h5>{name}</h5> </hp>
             </div>
             <div>{date}</div>
         </div>

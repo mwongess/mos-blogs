@@ -4,9 +4,21 @@ export const BlogMain = ({ blogs }) => {
   return (
     <div>
       {blogs.map((blog) => (
-        <div  className="blog">
-          <p>{blog.author}</p>
-          <p>{blog.description}</p>
+        <div className="left">
+          <div className="top">
+            <div>
+              <img
+                src="https://static.vecteezy.com/system/resources/thumbnails/009/734/564/small/default-avatar-profile-icon-of-social-media-user-vector.jpg"
+                alt=""
+              />
+            </div>
+            <p>{blog.author}</p>
+          </div>
+          <div className="blog">
+            <h3>{blog.blogName}</h3>
+            <p>{blog.description}</p>
+          </div>
+          <hr />
         </div>
       ))}
     </div>
