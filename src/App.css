@@ -1,0 +1,31 @@
+.flex {
+  display: flex;
+}
+.body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.header {
+  padding: 1rem;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  margin-bottom: 1rem;
+}
+.main {
+  display: flex;
+  justify-content: space-between;
+}
+.aside {
+  width: 30%;
+}
+.footer {
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.blog {
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  padding: 1rem;
+  border-radius: 5px;
+}
