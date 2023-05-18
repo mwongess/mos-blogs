@@ -1,9 +1,10 @@
 import "./App.css";
-import { BrowserRouter ,Routes,Route} from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { BlogHome } from "./BlogHome";
 import { BlogDetails } from "./BlogDetails";
 import { NotFound } from "./NotFound";
 import { BlogHeader } from "./BlogHeader";
+import { BlogFooter } from "./BlogFooter";
 
 const data = {
   title: "MyBlogs",
@@ -44,17 +45,21 @@ const data = {
 };
 
 function App() {
+  
   return (
     <div className="body">
-      <BlogHeader title={data.title}/>
+      <BlogHeader title={data.title} />
       <BrowserRouter>
         <Routes>
-          <Route index path="/" element={<BlogHome data={data}/>}></Route>
-          <Route  path="/blogs/details" element={<BlogDetails/>}></Route>
-          <Route  path="*" element={<NotFound/>}></Route>
+          <Route
+            path="/"
+            element={<BlogHome data={data} />}
+          ></Route>
+          <Route path="/blogs/details" element={<BlogDetails />}></Route>
+          <Route path="*" element={<NotFound />}></Route>
         </Routes>
-        
       </BrowserRouter>
+      <BlogFooter name={data.name} date={data.date} />
     </div>
   );
 }

@@ -1,9 +1,8 @@
 import { BlogHeader } from "./BlogHeader"
 
-export const BlogDetails = () => {
+export const BlogDetails = ({data}) => {
     return (
         <div>
-            <BlogHeader />
 
         </div>
     )

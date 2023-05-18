@@ -111,6 +111,16 @@ img{
 .title{
   color: hsl(180, 29%, 50%);
 }
+.not-found{
+  text-align: center;
+}
+a{
+  text-decoration: none;
+  cursor: pointer;
+}
+a:hover{
+  text-decoration: underline;
+}
 @media screen and (max-width: 600px) {
   .header{
     display: none;
