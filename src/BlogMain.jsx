@@ -21,7 +21,6 @@ export const BlogMain = ({ blogs }) => {
               <p>{blog.description}</p>
             </div>
           </Link>
-
           <hr />
         </div>
       ))}

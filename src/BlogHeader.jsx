@@ -1,17 +1,21 @@
 import "./App.css";
 import { Link } from "react-router-dom";
+import { FaHome } from "react-icons/fa";
 
 /* eslint-disable react/prop-types */
 export const BlogHeader = ({ title }) => {
   return (
     <div className="header">
       <div className="logo">
-        {/* <Link to="/">
-          <div>
-            <h2>{title}</h2>
-          </div>
-        </Link> */}
-        <h2>{title}</h2>
+        <Link to="/">
+          <h2>{title}</h2>
+        </Link>
+      </div>
+      <div className="home-link">
+        <FaHome />
+        <Link to="/">
+          <h4> Home</h4>
+        </Link>
       </div>
       <div>
         <input type="search" placeholder="Search blog" />

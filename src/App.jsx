@@ -37,6 +37,7 @@ const data = {
     },
     {
       author: "Michael Johnson",
+      imgUrl: "",
       blogName: "Foodie Finds",
       description:
         "Explore the world of cuisine with me, as I share recipes, restaurant reviews, and culinary adventures from around the globe.",
@@ -45,21 +46,18 @@ const data = {
 };
 
 function App() {
-  
   return (
     <div className="body">
-      <BlogHeader title={data.title} />
       <BrowserRouter>
+        <BlogHeader title={data.title} />
+
         <Routes>
-          <Route
-            path="/"
-            element={<BlogHome data={data} />}
-          ></Route>
+          <Route path="/" element={<BlogHome data={data} />}></Route>
           <Route path="/blogs/details" element={<BlogDetails />}></Route>
           <Route path="*" element={<NotFound />}></Route>
         </Routes>
+        <BlogFooter name={data.name} date={data.date} />
       </BrowserRouter>
-      <BlogFooter name={data.name} date={data.date} />
     </div>
   );
 }
