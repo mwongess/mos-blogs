@@ -1,8 +1,9 @@
 import "./App.css";
+import { BrowserRouter } from "react-router-dom";
+import { BlogHome } from "./BlogHome";
+import { BlogDetails } from "./BlogDetails";
+import { NotFound } from "./NotFound";
 import { BlogHeader } from "./BlogHeader";
-import { BlogMain } from "./BlogMain";
-import { BlogAside } from "./BlogAside";
-import { BlogFooter } from "./BlogFooter";
 
 const data = {
   tile: "MyBlogs",
@@ -45,12 +46,15 @@ const data = {
 function App() {
   return (
     <div className="body">
-      <BlogHeader title={data.tile} />
-      <div className="main">
-        <BlogMain blogs={data.blogs} />
-        <BlogAside blogs={data.blogs} />
-      </div>
-      <BlogFooter name={data.name} date={data.date} />
+      <BlogHeader/>
+      <BrowserRouter>
+        <Routes>
+          <Route index path="/" element={<BlogHome/>}></Route>
+          <Route  path="/blogs/details" element={<BlogDetails/>}></Route>
+          <Route  path="*" element={<NotFound/>}></Route>
+        </Routes>
+        
+      </BrowserRouter>
     </div>
   );
 }
