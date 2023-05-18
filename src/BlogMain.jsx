@@ -9,7 +9,7 @@ export const BlogMain = ({ blogs }) => {
           <div className="top">
             <div>
               <img
-                src="https://static.vecteezy.com/system/resources/thumbnails/009/734/564/small/default-avatar-profile-icon-of-social-media-user-vector.jpg"
+                src={blog.imgUrl}
                 alt=""
               />
             </div>
