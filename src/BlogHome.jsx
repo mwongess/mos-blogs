@@ -1,10 +1,11 @@
 import { BlogFooter } from "./BlogFooter";
-import { BlogHeader } from "./BlogHeader";
+import { BlogHeader } from "./BlogHeader"; 
+import {BlogMain} from "./BlogMain"
+import {BlogAside} from "./BlogAside"
 
 export const BlogHome = ({data}) => {
   return (
     <>
-      <BlogHeader title={data.tile} />
       <div className="main">
         <BlogMain blogs={data.blogs} />
         <BlogAside blogs={data.blogs} />
