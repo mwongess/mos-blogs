@@ -1,6 +1,6 @@
 import "./App.css";
 import { Link } from "react-router-dom";
-import { FaHome } from "react-icons/fa";
+import { FaHome,FaPenAlt } from "react-icons/fa";
 
 /* eslint-disable react/prop-types */
 export const BlogHeader = ({ title }) => {
@@ -16,6 +16,10 @@ export const BlogHeader = ({ title }) => {
         <Link to="/">
           <h4> Home</h4>
         </Link>
+      </div>
+      <div className="home-link">
+        <FaPenAlt />
+        <h4>Write</h4>
       </div>
       <div>
         <input type="search" placeholder="Search blog" />
