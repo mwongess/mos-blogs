@@ -34,14 +34,14 @@ const data = {
         "Discover the latest trends in fitness and health, and get tips and advice for staying in shape and living your best life.",
     },
     {
-      author: "Samantha Jones",
+      author: "Alex Jones",
       imgUrl: "https://images.freeimages.com/images/large-previews/101/red-lady-1241907.jpg",
       blogName: "Tech Talk",
       description:
         "Stay up-to-date on the latest technology news and trends, with insights and analysis from industry experts and thought leaders.",
     },
     {
-      author: "Michael Johnson",
+      author: "Amos Johnson",
       imgUrl: "https://images.freeimages.com/images/large-previews/415/brotherhood-at-sunset-1-1244631.jpg",
       blogName: "Foodie Finds",
       description:
