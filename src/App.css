@@ -145,6 +145,28 @@ a:hover {
   height: 20rem !important;
   border-radius: 0;
 }
+form{
+  padding: 6rem;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+form input{
+  height: 2.5rem;
+  width: 100%;
+}
+form button{
+  height: 2rem;
+  width: 6rem;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #007bff;
+  border: none;
+  color: #fff;
+}
+form textarea{
+  padding: 1rem;
+}
 @media screen and (max-width: 600px) {
   .header {
     display: none;

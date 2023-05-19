@@ -5,6 +5,7 @@ import { BlogDetails } from "./BlogDetails";
 import { NotFound } from "./NotFound";
 import { BlogHeader } from "./BlogHeader";
 import { BlogFooter } from "./BlogFooter";
+import { WriteBlog } from "./WriteBlog";
 
 const data = {
   title: "MyBlogs",
@@ -58,6 +59,7 @@ function App() {
         <Routes>
           <Route path="/" element={<BlogHome data={data} />}></Route>
           <Route path="/blogs/details" element={<BlogDetails />}></Route>
+          <Route path="/new" element={<WriteBlog/>}></Route>
           <Route path="*" element={<NotFound />}></Route>
         </Routes>
         <BlogFooter name={data.name} date={data.date} />
