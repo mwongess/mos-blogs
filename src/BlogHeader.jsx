@@ -14,13 +14,13 @@ export const BlogHeader = ({ title }) => {
       <div className="home-link">
         <FaHome />
         <Link to="/">
-          <h4> Home</h4>
+          <p> Home</p>
         </Link>
       </div>
       <div className="home-link">
         <FaPenAlt />
         <Link to="/new">
-          <h4>Write</h4>
+          <p>Write</p>
         </Link>
       </div>
       <div>

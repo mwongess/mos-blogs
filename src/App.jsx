@@ -8,7 +8,7 @@ import { BlogFooter } from "./BlogFooter";
 import { WriteBlog } from "./WriteBlog";
 
 const data = {
-  title: "MyBlogs",
+  title: "BLOGS",
   name: "Amos Mwongela",
   date: new Date().toDateString(),
   blogs: [
